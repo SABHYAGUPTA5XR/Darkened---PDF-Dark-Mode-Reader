@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "PDF Theme Master",
+  "name": "Darken - PDF Dark Mode Reader",
   "version": "1.0",
   "description": "Applies dark mode and other themes to PDFs.",
   "permissions": [
