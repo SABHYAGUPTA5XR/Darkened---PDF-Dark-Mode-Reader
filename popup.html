@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 200px; padding: 10px; }
+    .row { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <label>
+      <input type="checkbox" id="enableToggle">
+      Enable PDF Theming
+    </label>
+  </div>
+  
+  <div class="row">
+    <label for="themeSelect">Theme:</label>
+    <select id="themeSelect">
+      <option value="none">Default (No Theme)</option>
+      <option value="dark">Pure Dark (Invert)</option>
+      <option value="dark-smart">Smart Dark (Better)</option>
+      <option value="sepia">Sepia</option>
+      <option value="desert">Desert</option>
+      <option value="cyberpunk">Cyberpunk</option>
+    </select>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

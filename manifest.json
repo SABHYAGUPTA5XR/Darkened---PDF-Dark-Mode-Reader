@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Theme Master",
+  "version": "1.0",
+  "description": "Applies dark mode and other themes to PDFs.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "file:///*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*.pdf",
+        "https://*/*.pdf",
+        "file:///*/*.pdf"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
